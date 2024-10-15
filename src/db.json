@@ -1,0 +1,13 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "name": "Website Redesign",
+        "description": "Redesign the company website",
+        "tasks": [
+          { "id": 1, "name": "Design mockups", "deadline": "2024-10-30" }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,98 @@
+
+
+/* Main App container */
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Gradient background */
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Basic structure for page sections */
+  .page-section {
+    flex: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  
+    @media (max-width: 768px) {
+      padding: 10px;
+    }
+  }
+  
+  /* Smooth animation for transitions */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Styles for navigation */
+  .navbar {
+    background-color: #42a5f5;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  
+    h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: white;
+    }
+  
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  
+  /* Button animations */
+  button {
+    background-color: #42a5f5;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #1e88e5; /* Darker blue on hover */
+    }
+  }
+  
+  /* Footer with responsive styles */
+  .footer {
+    background-color: #2f3e46;
+    color: #cbd5e0;
+    padding: 15px;
+    text-align: center;
+  
+    a {
+      color: #42a5f5;
+      text-decoration: none;
+      transition: color 0.3s ease;
+  
+      &:hover {
+        color: #1e88e5;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  }
+  

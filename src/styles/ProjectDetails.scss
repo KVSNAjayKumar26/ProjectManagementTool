@@ -1,0 +1,68 @@
+
+
+/* Main container for project details */
+.project-details {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f8ff; /* Light background color */
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.6s ease-in-out;
+  
+    @media (max-width: 768px) {
+      padding: 15px;
+    }
+  
+    h1 {
+      color: #42a5f5; /* Blue color for project title */
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      font-size: 1.1rem;
+      color: #555; /* Lighter color for project description */
+      margin-bottom: 20px;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+      color: #ff7043; /* Orange color for task section heading */
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Form and TaskList will have some margin */
+  .add-task-form,
+  .task-list {
+    margin-top: 20px;
+  }
+  
+  /* Button animation for adding tasks */
+  button {
+    background-color: #42a5f5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #1e88e5; /* Darker blue on hover */
+    }
+  }
+  
+  /* Fade-in animation for the entire component */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

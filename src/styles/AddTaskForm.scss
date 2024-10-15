@@ -1,0 +1,77 @@
+/* src/styles/AddTaskForm.scss */
+.add-task-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+  
+    input, button {
+      margin-bottom: 15px;
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+  
+    input:focus {
+      border-color: #42a5f5;
+      box-shadow: 0 0 8px rgba(66, 165, 245, 0.5);
+    }
+  
+    button {
+      background-color: #42a5f5;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+  
+      &:hover {
+        background-color: #1e88e5;
+      }
+  
+      &:active {
+        background-color: #64b5f6;
+        transform: scale(0.98);
+      }
+    }
+  
+    /* Hover and focus effect for inputs */
+    input:hover, input:focus {
+      box-shadow: 0 0 8px rgba(66, 165, 245, 0.5);
+    }
+  
+    /* Animation on form */
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .add-task-form {
+      max-width: 90%;
+      padding: 15px;
+    }
+  
+    input, button {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  }
+  
